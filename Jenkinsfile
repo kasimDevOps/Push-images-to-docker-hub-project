@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/python-flask-app"
+        DOCKER_IMAGE = "kasimrock64/python-flask-app"
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')  // Jenkins credentials ID for Docker Hub
         GITHUB_CREDENTIALS = credentials('github-creds')        // Jenkins credentials ID for GitHub
     }
